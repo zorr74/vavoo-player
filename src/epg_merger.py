@@ -28,7 +28,7 @@ def _get_playlist_channel_ids() -> Set[str]:
 
 # All 4 sources as separate entries for maximum coverage
 EPG_SOURCES = [
-    EPGSource(name="DE_primary", url="https://iptv-epg.org/files/epg-de.xml", priority=0),
+    EPGSource(name="DE_primary", url="https://iptv-epg.org/files/epg-de.xml.gz", priority=0),
     EPGSource(name="DE_backup", url="https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz", priority=1),
     EPGSource(name="CH_primary", url="https://iptv-epg.org/files/epg-ch.xml.gz", priority=2),
     EPGSource(name="CH_backup", url="https://epgshare01.online/epgshare01/epg_ripper_CH1.xml.gz", priority=3),
